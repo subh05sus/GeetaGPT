@@ -1,0 +1,240 @@
+/* import Bootstrap */
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+
+add custom styles
+html, body {
+  font-size: 15px;
+  height: 100%;
+  transition: background 10s ease-in-out;
+}
+
+body {
+  transition: background 10s ease-in-out;
+  background: linear-gradient(-45deg, #4417a5, #ff0099) fixed;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: left;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  left: 5%;
+  right: 5%;
+  /* transform: translate(-50%, -50%); */
+}
+
+header {
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+form {
+  margin-top: 0;
+}
+
+textarea {
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 1.2rem;
+  display: block;
+  margin: 0 auto;
+  color: #606060;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+  resize: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3) inset;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+
+}
+
+
+
+
+input[type="range"] {
+  width: 60%;
+  margin: 0 1rem;
+}
+
+input[type="text"] {
+  border: none;
+  background: none;
+  width: 30px;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 1rem auto;
+  width: 150px;
+  height: 50px;
+  background-color: #1d0e48;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white
+}
+
+#loading {
+  display: none;
+  color: gray;
+  margin-top: 1rem;
+}
+
+pre {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.dia{
+  width: 90%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  bottom: 15%;
+  right: 10%;
+  left: 10%;
+  z-index: 1;
+}
+
+.dia:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+  
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
+input[type="submit"] {
+  display: block;
+  margin: 1rem auto;
+  width: 150px;
+  height: 50px;
+  background-color: rgb(41, 23, 115);
+  border-radius: 0.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background-color: #1d0e48;
+  transform: scale(1.1);
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+
+}
+
+
+
+#loading {
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+
+a {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+.peacock{
+  padding: 1%;
+}
+
+#greet {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+#line1Greet {
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+}
+
+#line2Greet {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+#greet:hover {
+  text-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease;
+}
+
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+
+#foot{
+  color: white;
+}
+
+a{
+  color: white;
+}
