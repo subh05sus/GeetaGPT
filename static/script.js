@@ -38,12 +38,6 @@ form.addEventListener('submit', () => {
 
 
 
-const textarea = document.querySelector('textarea');
-
-textarea.addEventListener('input', () => {
-  textarea.style.height = 'auto';
-  textarea.style.height = textarea.scrollHeight + 'px';
-});
 
 
 
@@ -62,11 +56,11 @@ submitButton.addEventListener('click', () => {
 
 
 
-// document.getElementById("submit").addEventListener("click", scrollToEnd());
+document.getElementById("submit").addEventListener("click", scrollToEnd());
 
 
 var animationContainer = document.getElementById('loading');
-var animationDataUrl = 'https://assets1.lottiefiles.com/packages/lf20_chhegoln.json';
+var animationDataUrl = 'https://assets10.lottiefiles.com/packages/lf20_poqmycwy.json';
 
 var animData = {
   container: animationContainer,
@@ -77,6 +71,28 @@ var animData = {
 };
 
 var anim = bodymovin.loadAnimation(animData);
+
+
+
+
+const textarea = document.querySelector('textarea');
+
+textarea.addEventListener('input', function() {
+  this.style.height = 'auto';
+  this.style.height = this.scrollHeight + 'px';
+});
+
+var animateButton = function(e) {
+
+  e.preventDefault;
+  //reset animation
+  e.target.classList.remove('animate');
+  
+  e.target.classList.add('animate');
+  setTimeout(function(){
+    e.target.classList.remove('animate');
+  },700);
+};
 
 
 
