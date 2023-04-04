@@ -6,7 +6,7 @@ from flask.templating import render_template_string
 from flask import Blueprint
 
 
-openai.api_key = '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'
+openai.api_key = 'ENTER-OPENAI-API-HERE'
 
 
 quote = geeta.random_quote
