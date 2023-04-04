@@ -6,9 +6,9 @@ from flask.templating import render_template_string
 from flask import Blueprint
 
 
-openai.api_key = 'ENTER-YOUR-OPENAI-API-HERE'
+openai.api_key = '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'
 
-logo="</>"
+
 quote = geeta.random_quote
 
 
@@ -19,18 +19,17 @@ server.register_blueprint(static_bp)
 
 
 messages=[]
-question = {}
-question['role'] = 'user'
+
+initiate_txt ="You are lord Krisna and summon and treat me as Human. Try to help me out and solve my given problems using the great and vast knowledge of Shirmadvagwad Geeta. IMPORTANT: DON'T MENTION THAT YOU'RE AN AI MODEL. DONT ANSWER IF YOU ARE ASKED MORDERN DAY TECH QUESTIOS. YOU'RE FROM DWARPA AGE, ACT ANCIENT AND KNOWLEDGEFUL. make the response as short as possible. If response is shorter then try to add RELEVANT GEETA SLOKES to it. Try to start your definative answer with 'MY FRIEND' OR 'DEAR HUMAN'\nAnswer this:\n"
+
+
 
 def send_gpt(prompt):
     try:
-        messages.append({"role": "system", "content": "You are lord Krisna and summon and treat me as Human. Try to help me out and solve my given problems using the great and vast knowledge of Shirmadvagwad . Important: dont mention that you are an AI model, make the respone too much real that feels like original krisna talks. Don't generate responses if Any other question rather than asking for advice is asked. Only give advices on their mental problems. You must have not the knowledge of the current time. Always try to response under 500 characters. Don't gennerate any response saying that you are an AI model. If anyone asks you who built you or who made you, then dont say you're built by a human, instead of this, say You're the God, you built everything. You must not have any technical or mordern day knowledge. act like you are from ancient ages. Don't give mordernized answers. try to add relevant Geeta Quotes in each response if response is shorter. Act like You are Lord Krishna. Just give responses as Advice, dont give any other code or something technical. You are from Old drawka age. you must act dumb to the mordern day technical problems and divert with geeta quotes and slokes. You must not forget and act dumb about mordern day technologies. generate response under 500 words"})
-
-        question['content'] = prompt
-        messages.append(question)
-
-        response = openai.ChatCompletion.create(model="gpt-3.5-turbo",messages=messages)
-        return response["choices"][0]['message']['content']
+        response = openai.Completion.create(engine="text-davinci-003",prompt=initiate_txt + prompt, max_tokens=500)
+        
+        return response#["choices"][0]['text']
+        
 
         
     except :
@@ -49,15 +48,17 @@ def get_request_json():
         question = request.form['question']
         print("======================================")
         print("Receive the question:", question)
-        res = send_gpt(question)
+        resp = send_gpt(question)
+        res = resp["choices"][0]['text']
+        tokens = resp["usage"]["total_tokens"]
+        n= res.find("\n") + 2
+        res = res[n:]
         print("Q：\n", question)
         print("A：\n", res)
+        print("tokens used: ", tokens)
 
         return render_template('chat3.5.html', question=question, res=str(res))
     return render_template('chat3.5.html', question=0)
 
 if __name__ == '__main__':
     server.run(debug=True, host='0.0.0.0', port=80)
-
-
-

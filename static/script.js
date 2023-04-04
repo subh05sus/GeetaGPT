@@ -41,23 +41,6 @@ form.addEventListener('submit', () => {
 
 
 
-function scrollToEnd() {
-  window.scrollTo({
-    top: document.body.scrollHeight,
-    behavior: 'smooth'
-  });
-};
-
-const submitButton = document.getElementById('submit');
-submitButton.addEventListener('click', () => {
-  const bodyHeight = document.body.scrollHeight;
-  window.scrollTo(0, bodyHeight);
-});
-
-
-
-document.getElementById("submit").addEventListener("click", scrollToEnd());
-
 
 var animationContainer = document.getElementById('loading');
 var animationDataUrl = 'https://assets10.lottiefiles.com/packages/lf20_poqmycwy.json';
@@ -93,7 +76,5 @@ var animateButton = function(e) {
     e.target.classList.remove('animate');
   },700);
 };
-
-
 
 
