@@ -6,6 +6,9 @@ A GPT based Chatbot made with Flask which possesses knowledge about Shrimadvagwa
 - Can motivate you if you feel low
 - is built with Flask and Django
 
+## Usage Instructions
+Don't forget to update your OpenAI API key in `main.py`<br>
+You can get it from here: https://platform.openai.com/account/api-keys
 
 ## Screenshots
 ![MAIN PAGE](https://user-images.githubusercontent.com/116567041/229670073-5e64b92c-56fe-4732-b701-5e0bd0e75e05.png)
