@@ -28,6 +28,7 @@ href="static/favicon.ico">
 </head>
 
 <body>
+  <!-- <audio src="{{ url_for('static', filename='BGM.mp3') }}" autoplay loop preload="auto" volume="0.2"></audio> -->
   <main>
     <Center>
       <div id="headpic">
@@ -51,12 +52,13 @@ href="static/favicon.ico">
     <div class="content">
       <form method="post" onsubmit="submit.disabled=true" id="myForm">
         <br>
-        <center><textarea name="question" placeholder="Type Here... like 'I need peace'" rows="1"></textarea></center>
+        <center><textarea name="question" placeholder="Type Here... like 'I need peace'" rows = '1' ></textarea></center>
         <br>
         <input type="submit" value="Ask Krishna" id='submit' class="bubbly-button">
         
       </form>
     </div>
+
     
     <br>
     <div id="loading">
@@ -117,7 +119,7 @@ href="static/favicon.ico">
     Developed by <a href="https://linktr.ee/subhadipsaha"><b id="subh">Subhadip Saha</b></a>
     <br>
     <div id="social">
-      <a href="https://www.linkedin.com/in/subhadipsahaofficial/">LinkedIn</a> | <a href="https://www.github.com/subhadip-saha-05">GitHub</a>
+      <a href="https://www.linkedin.com/in/subhadipsahaofficial/">LinkedIn</a> | <a href="https://www.github.com/subh05sus">GitHub</a>
     </div>
     <br>
     <img src="{{ url_for('static', filename='images/peacock-feather.png') }}" alt="Image Preview" id="feather" height="65px">
