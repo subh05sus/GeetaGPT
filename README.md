@@ -1,17 +1,57 @@
 # GeetaGPT
-A GPT based Chatbot made with Flask which possesses knowledge about Shrimadvagwat Geeta and act like Lord Krishna
 
-- Acts like a replica of Lord Krishna with the vast knowledge of Shimadbhagwat Geeta and the universe
-- Can answer your problems about life and can give advice
-- Can motivate you if you feel low
-- is built with Flask and Django
+GeetaGPT is a chatbot built with Flask that embodies the persona of Lord Krishna, possessing extensive knowledge from Shrimadvagwat Geeta. The bot is powered by the OpenAI GPT-3.5 model, capable of answering life problems, providing advice, and offering motivation.
+
+## Features
+
+- **Divine Wisdom:** Acts as a replica of Lord Krishna, answering questions and offering advice based on the teachings of Shrimadvagwat Geeta.
+- **Life Guidance:** Provides insightful responses to life problems and challenges.
+- **Motivational Chat:** Offers motivation and uplifting messages for users feeling low.
 
 ## Usage Instructions
-Don't forget to update your OpenAI API key in `main.py`<br>
-You can get it from here: https://platform.openai.com/account/api-keys
+
+1. **Setup:**
+   - Clone the repository: `git clone https://github.com/yourusername/GeetaGPT.git`
+   - Navigate to the project directory: `cd GeetaGPT`
+
+2. **Configuration:**
+   - Update your OpenAI API key in `main.py`. Obtain your API key [here](https://platform.openai.com/account/api-keys).
+
+3. **Environment Setup:**
+   - Create a virtual environment: `python -m venv venv`
+   - Activate the virtual environment:
+     - On Windows: `venv\Scripts\activate`
+     - On Unix or MacOS: `source venv/bin/activate`
+
+4. **Install Dependencies:**
+   - Install required packages: `pip install -r requirements.txt`
+
+5. **Run the Application:**
+   - Start the Flask server: `python main.py`
+   - Access the application in your browser: [http://localhost:80/](http://localhost:80/)
 
 ## Screenshots
-![MAIN PAGE](https://user-images.githubusercontent.com/116567041/229670073-5e64b92c-56fe-4732-b701-5e0bd0e75e05.png)
-![other](https://user-images.githubusercontent.com/116567041/229670093-0daa5520-8164-46e9-8e4c-0f7bf50d8e4a.png)
 
-### Feel free to contribute
+![Main Page](https://user-images.githubusercontent.com/116567041/229670073-5e64b92c-56fe-4732-b701-5e0bd0e75e05.png)
+![Other](https://user-images.githubusercontent.com/116567041/229670093-0daa5520-8164-46e9-8e4c-0f7bf50d8e4a.png)
+
+## Contribution Guidelines
+
+Feel free to contribute! Follow these steps:
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/your-feature`.
+3. Commit your changes: `git commit -m "Add your feature"`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+Special thanks to [OpenAI](https://platform.openai.com/) for providing the powerful GPT-3.5 model.
+
+---
+
+This project is maintained by Subhadip Saha. Feel free to reach out with any questions or suggestions!
