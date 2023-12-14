@@ -15,7 +15,9 @@ GeetaGPT is a chatbot built with Flask that embodies the persona of Lord Krishna
    - Navigate to the project directory: `cd GeetaGPT`
 
 2. **Configuration:**
-   - Update your OpenAI API key in `main.py`. Obtain your API key [here](https://platform.openai.com/account/api-keys).
+   - Create a `.env` file in the root of the project.
+   - Add your OpenAI API key to the `.env` file: `API_KEY=your_openai_api_key`.
+   - Update `main.py` to load the API key from the environment: `OpenAIAPI = os.getenv("API_KEY")`.
 
 3. **Environment Setup:**
    - Create a virtual environment: `python -m venv venv`
@@ -54,4 +56,4 @@ Special thanks to [OpenAI](https://platform.openai.com/) for providing the power
 
 ---
 
-This project is maintained by Subhadip Saha. Feel free to reach out with any questions or suggestions!
+This project is maintained by [Your Name]. Feel free to reach out with any questions or suggestions!
