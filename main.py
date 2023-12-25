@@ -4,9 +4,14 @@ import geeta
 from flask.helpers import url_for
 from flask.templating import render_template_string
 from flask import Blueprint
-
+from dotenv import load_dotenv
 import os
+
+# Load environment variables from .env file
+load_dotenv()
+
 OpenAIAPI = os.getenv("API_KEY")
+print(OpenAIAPI)
 
 openai.api_key = OpenAIAPI
 quote = geeta.random_quote
