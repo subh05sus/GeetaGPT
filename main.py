@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OpenAIAPI = os.getenv("API_KEY")
+quote = geeta.random_quote
+
 if not OpenAIAPI:
     raise ValueError("OpenAI API key is missing. Set it as an environment variable.")
 openai.api_key = OpenAIAPI
