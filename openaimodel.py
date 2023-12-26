@@ -29,6 +29,7 @@ def send_gpt(prompt, initiate_txt = initiate_txt):
         print(response)
 
         return response["choices"][0]['message']['content']
+    
     except Exception as e:
         error_message = f"An error occurred: {str(e)}"
         print(error_message)
