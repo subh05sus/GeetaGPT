@@ -21,26 +21,46 @@ var quotes = [
   "Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear. ~Source: Bhagvad-Geeta 18.66"
   ];
   
-const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 console.log(randomQuote);
+let quoteElement = document.getElementById("quote");
 
+quoteElement.textContent = randomQuote;
+
+
+
+var inputBox = document.getElementsByTagName("textarea");
+
+function validateInput() {
+  var textarea1 = inputBox[0];
+  var val = textarea1.value;
+  if (val.trim() === "") {
+    // Add a class to initiate the shaking animation
+    textarea1.className += "shake";
+    // Remove the class after the animation completes
+    setTimeout(function() {
+      textarea1.className = textarea1.className.replace(/\bshake\b/g, '');
+    }, 800);
+    
+  } 
   
+  else {
+    // If there is input, remove the shake class immediately
+    textarea1.className = textarea1.className.replace(/\bshake\b/g, '');
+  }
+}
+
 const dia = document.querySelector(".dia");
-  const quoteElement = document.getElementById("quote");
-  quoteElement.textContent = randomQuote;
+
 
 const loading = document.getElementById('loading');
 const form = document.querySelector('form');
 
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateInput();
   loading.style.display = 'block';
 });
-
-
-
-
-
-
 
 var animationContainer = document.getElementById('loading');
 var animationDataUrl = 'https://assets10.lottiefiles.com/packages/lf20_poqmycwy.json';
