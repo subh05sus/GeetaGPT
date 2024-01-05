@@ -199,3 +199,20 @@ input[type="submit"]:focus {
 input[type="submit"]:active {
 	transform: translateY(-10px);
 }
+
+/* Shake animation */
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25%, 75% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
