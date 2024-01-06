@@ -22,6 +22,47 @@ quotes=[
 "The living entities in this conditioned world are My eternal fragmentary parts. Due to the conditioned life , they are struggling very hard with the six senses which includethe mind.  ~ Source: Lord Sri Krishna - Bhagvad-gita 15.7",
 "If you become conscious of Me, you will passover all the obstacles of conditioned life by My grace. If however you do not work in such consciousness but act through false ego,not hearing Me, you will be lost.  ~ Source: Lord Sri Krishna - Bhagvad-gita 18.58",
 "Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear.  ~ Source: Lord Sri Krishna - Bhagvad-gita 18.66"
+"Blessed is a human birth, even the dwellers in heaven desire this birth, for true knowledge and pure love may be attained only by a human being." 
+"The Key to happiness is the reduction of desires."
+"No one who does good work will ever come to a bad end, either here or in the world to come."
+"The peace of God is with them whose mind and soul are in harmony, who are free from desire and wrath, who know their own soul." 
+"We behold what we are, and we are what we behold."
+"Even as a person casts off worn-out clothes and puts on others that are new, so the embodied self casts off worn-out bodies and enters into others that are new."
+"As fire is concealed by smoke, as a mirror by dust, as an unborn baby by the womb, so is knowledge concealed by ignorance."
+"The self-controlled soul, who moves amongst sense objects, free from either attachment or repulsion, he wins eternal Peace."
+"Never was there a time when I did not exist, nor you, nor these kings of men. Never will there be a time hereafter when any of us shall cease to be." 
+"Even as the embodied self passes, in this body, through the stages of childhood, youth, and old age, so does it pass into another body. Calm souls are not bewildered by this." 
+"Notions of heat and cold, of pain and pleasure. arise, O son of Kunti, only from the contact of the senses with their objects. They come and go; they are impermanent, endure them, O Bharata." 
+"Being established in Yoga, O Dhananjaya, perform your actions, casting off attachment and remaining even-minded both in success and in failure. This evenness is called Yoga." 
+"The man of self-control, moving among objects with his senses under restraint, and free from attachment and hate, attain serenity of mind." 
+"That man who lives completely free from desires, without longing, devoid of the sense of 'I' and 'mine,' attains peace." 
+"Therefore always do without attachment the work you have to do; for a man who does his work without attachment attains the Supreme." 
+"The love and hatred that the senses feel for their objects are inevitable. But let no one come under their sway; for they are one’s enemies." 
+"He who has no attachments can really love others, for his love is pure and divine." - Bhagavad Gita 5.29
+"Strive constantly to serve the welfare of the world; by devotion to selfless work, one attains the supreme goal of life." - Bhagavad Gita 3.19
+"The wise see knowledge and action as one; they see truly." - Bhagavad Gita 5.4
+"The soul is neither born, and nor does it die. It is not slain when the body is slain." - Bhagavad Gita 2.20
+"Those who are free from anger and all material desires, who are self-realized, self-disciplined and constantly endeavoring for perfection, are assured of liberation in the Supreme." - Bhagavad Gita 5.26
+"Set thy heart upon thy work, but never on its reward." - Bhagavad Gita 2.47
+"A person can rise through the efforts of his own mind; or draw himself down, in the same manner. Because each person is his own friend or enemy in either the face of adversity or opportunity." - Bhagavad Gita 6.5-6
+"He who is not disturbed in mind even amidst the threefold miseries or elated when there is happiness, and who is free from attachment, fear, and anger, is called a sage of steady mind." - Bhagavad Gita 2.56
+"The one who has control over his mind is tranquil in heat and cold, in pleasure and pain, and in honor and dishonor; and is ever steadfast with the Supreme Self." - Bhagavad Gita 6.7
+"Perform your duties with an unperturbed mind, O Arjuna, abandoning all desires for any benefit and being content with whatever comes your way, for such a person is unaffected by sinful reactions, even as a lotus leaf is untouched by water." - Bhagavad Gita 2.47
+"Detached action is selfless action. You can be detached while doing your duties, and that is the secret of selfless action." - Bhagavad Gita 3.19
+"The senses are so strong and impetuous, O Arjuna, that they forcibly carry away the mind even of a man of discrimination who is endeavoring to control them." - Bhagavad Gita 2.60
+"In the material world, the wise are engaged in charity and acts of welfare for the welfare of others. In this way, they achieve liberation from the cycle of birth and death." - Bhagavad Gita 5.25
+"I am time, the great destroyer of the world, and I have come here to destroy all people. With the exception of you [the Pandavas], all the soldiers here on both sides will be slain." - Bhagavad Gita 11.32
+"One who is not disturbed by the incessant flow of desires—that enter like rivers into the ocean, which is ever being filled but is always still—can alone achieve peace, and not the person who strives to satisfy such desires." - Bhagavad Gita 2.70
+"Abandoning all desires born of egoism, and completely restraining the mind with the intellect, they live free from the sense of 'I' and 'mine,' and attain the state of peace beyond all understanding." - Bhagavad Gita 2.71
+"I am the beginning, the middle, and the end of all beings." - Bhagavad Gita 10.20
+"Perform your prescribed duties, for action is better than inaction. A man cannot even maintain his physical body without work." - Bhagavad Gita 3.8
+"For those who are constantly devoted and who worship Me with love, I give the understanding by which they can come to Me." - Bhagavad Gita 10.10
+"Those who are not deluded, the great souls, are under the protection of the divine nature. They are fully engaged in devotional service because they know Me as the Supreme Personality of Godhead, original and inexhaustible." - Bhagavad Gita 9.13
+"Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear.  ~ Source: Lord Sri Krishna - Bhagvad-gita 18.66",
+"Blessed is a human birth, even the dwellers in heaven desire this birth, for true knowledge and pure love may be attained only by a human being.",
+"The key to happiness is the reduction of desires.",
+"The peace of God is with them whose mind and soul are in harmony, who are free from desire and wrath, who know their own soul.",
+"Perform your duties with an unperturbed mind, O Arjuna, abandoning all desires for any benefit and being content with whatever comes your way, for such a person is unaffected by sinful reactions, even as a lotus leaf is untouched by water."
 ];
 
 random_quote = random.choice(quotes)
