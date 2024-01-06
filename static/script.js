@@ -51,9 +51,6 @@ function validateInput() {
   }
 }
 
-const dia = document.querySelector(".dia");
-
-
 const loading = document.getElementById('loading');
 const form = document.querySelector('form');
 
