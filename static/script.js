@@ -19,14 +19,15 @@ var quotes = [
   "The living entities in this conditioned world are My eternal fragmentary parts. Due to the conditioned life , they are struggling very hard with the six senses which includethe mind. ~Source: Bhagvad-Geeta 15.7",
   "If you become conscious of Me, you will passover all the obstacles of conditioned life by My grace. If however you do not work in such consciousness but act through false ego,not hearing Me, you will be lost. ~Source: Bhagvad-Geeta 18.58",
   "Abandon all varieties of religion and just surrender unto Me. I shall deliver you from all sinful reactions. Do not fear. ~Source: Bhagvad-Geeta 18.66"
-  ];
-  
-let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-console.log(randomQuote);
-let quoteElement = document.getElementById("quote");
+];
 
+const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+// console.log(randomQuote);
+
+const dia = document.querySelector(".dia");
+
+const quoteElement = document.getElementById("quote");
 quoteElement.textContent = randomQuote;
-
 
 
 var inputBox = document.getElementsByTagName("textarea");
@@ -50,9 +51,6 @@ function validateInput() {
   }
 }
 
-const dia = document.querySelector(".dia");
-
-
 const loading = document.getElementById('loading');
 const form = document.querySelector('form');
 
@@ -74,27 +72,20 @@ var animData = {
 };
 
 var anim = bodymovin.loadAnimation(animData);
-
-
-
-
 const textarea = document.querySelector('textarea');
 
-textarea.addEventListener('input', function() {
+textarea.addEventListener('input', function () {
   this.style.height = 'auto';
   this.style.height = this.scrollHeight + 'px';
 });
 
-var animateButton = function(e) {
-
+var animateButton = function (e) {
   e.preventDefault;
   //reset animation
   e.target.classList.remove('animate');
-  
+
   e.target.classList.add('animate');
-  setTimeout(function(){
+  setTimeout(function () {
     e.target.classList.remove('animate');
-  },700);
+  }, 700);
 };
-
-

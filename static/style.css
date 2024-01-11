@@ -1,220 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rubik+Doodle+Shadow&family=Rubik+Maps&display=swap');
 
-add custom styles
-html, body {
-  font-size: 17px;
-  height: 100%;
-  transition: background 10s ease-in-out;
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+html,
+body {
+	font-size: 17px;
+	height: 100%;
+	transition: background 10s ease-in-out;
+	font-family: 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+	scroll-behavior: smooth;
+	background-image: url('../static/images/bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	user-select: none;
 }
-
-
-
-
-
-
-
-form {
-  margin-left: auto;
-  margin-right: auto;
-  left: 5%;
-  right: 5%;
-  /* transform: translate(-50%, -50%); */
-}
-
-header {
-  padding: 1rem;
-}
-
-
-
-main {
-  padding: 1rem;
-}
-
-
-form {
-  margin-top: 0;
-}
-
-#gpt{
-  color: #b4d6fd;
-}
-
 
 textarea {
-  align-items: center;
-  width: 90%;
-  max-width: 1000px;
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  font-size: 1.2rem;
-  display: block;
-  margin: 0 auto;
-  color: #2c2c2c;
-  background-color: #b4d6fd;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
-  resize: none;
-  overflow: hidden;
-  transition: all 0.3s ease;
+	align-items: center;
+	width: 90%;
+	max-width: 1000px;
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	font-size: 1.2rem;
+	display: block;
+	margin: 0 auto;
+	color: #2c2c2c;
+	background-color: #b4d6fd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+	resize: none;
+	overflow: hidden;
+	transition: all 0.3s ease;
 }
 
 textarea:focus {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,0,0,0.8) inset;
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.7);
-
+	transform: scale(1.05);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8) inset;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.7);
 }
 
-
-
-
-
-
 #loading {
-  display: none;
-  margin-top: 1rem;
+	display: none;
+	margin-top: 1rem;
 }
 
 pre {
-  margin-top: 1rem;
-  font-size: 17px;
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-  white-space: pre-wrap;
-  word-break: break-word;
-  text-align: justify;
-  line-height: 1.5;
+	margin-top: 1rem;
+	white-space: pre-wrap;
+	word-break: break-word;
+	text-align: justify;
+	line-height: 1.5;
 }
 
-.dia{
-  width: 90%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  background-color: #b4d6fd;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-  transition: all 0.3s ease-in-out;
-  bottom: 15%;
-  right: 10%;
-  left: 10%;
-  font-size: 17px;
-  font-style: oblique;
-  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;  z-index: 1;
+.dia {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20rem auto 0;
+	padding: 20px;
+	background-color: #b4d6fd;
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	transition: all 0.3s ease-in-out;
+	bottom: 15%;
+	right: 10%;
+	left: 10%;
+	font-style: oblique;
+	z-index: 1;
 }
 
 .dia:hover {
-  transform: rotate(0deg) scale(1.05);
-  box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
-  cursor: pointer;
-  
+	transform: rotate(0deg) scale(1.05);
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
-
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
 }
-
-
-
-
 
 #loading {
-  width: 200px;
-  height: 200px;
-  padding: 5px;
-  margin: 0 auto;
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	margin: 0 auto;
 }
-
 
 a {
-  color: rgb(0, 0, 0);
-  font-size: 12px;
+	color: rgb(0, 0, 0);
+	font-size: 12px;
 }
 
-.peacock{
-  padding: 1%;
+.peacock {
+	padding: 1%;
 }
 
 #greet {
-  color: white;
-  padding: 20px;
-  text-align: center;
+	color: white;
+	padding: 20px;
+	text-align: center;
 }
+
 #line1Greet {
-  font-size: 3em;
-  font-weight: bold;
-  position: relative;
-  transition: all 0.3s ease-in-out;
-  text-shadow: 10px 10px 20px rgba(0,0,0,1);
+	font-size: 3em;
+	font-weight: bold;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	text-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
 }
 
 #line2Greet {
-  text-shadow: 10px 10px 20px rgba(0,0,0,1);
-  font-size: 14px;
-  margin-top: 10px;
+	text-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
+	font-size: 14px;
+	margin-top: 10px;
 }
 
-
-
-
-
-
-#foot{
-  color: white;
+#foot {
+	color: white;
 }
 
-a{
-  color: white;
-  text-decoration: none;
+a {
+	color: white;
+	text-decoration: none;
 }
 
-#starting{
-  background-color:none;
-  box-shadow:none;
-  border-radius:none;
-  padding:5px;
+#starting {
+	background-color: none;
+	box-shadow: none;
+	border-radius: none;
+	padding: 5px;
 }
 
-
-mainres{
-  color: #000000;
-  background-color: #71b3ff;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-in-out;
-  
-}
-#subh{
-  box-shadow: none;
-  background-color:#00000000;
-  font-size: 22px;
-  color: #b4d6fd;
-}
-mainres:hover{
-  box-shadow: none;
+#mainres {
+	color: #000000;
+	background-color: #71b3ff;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+	transition: all 0.3s ease-in-out;
 }
 
+#subh {
+	box-shadow: none;
+	background-color: #00000000;
+	font-size: 22px;
+	color: #b4d6fd;
+}
+
+#mainres:hover {
+	box-shadow: none;
+}
 
 input[type="range"] {
 	border-radius: 50px;
 	width: 60%;
 	margin: 0 1rem;
-  }
-  
-  input[type="text"] {
+}
+
+input[type="text"] {
 	border: none;
 	background: none;
 	width: 30px;
-  }
-  
-  input[type="submit"] {
+}
+
+input[type="submit"] {
 	display: block;
 	margin: 1rem auto;
 	width: 150px;
@@ -224,9 +174,9 @@ input[type="range"] {
 	font-size: 1.5rem;
 	cursor: pointer;
 	color: white;
-  }
+}
 
-  input[type="submit"] {
+input[type="submit"] {
 	display: block;
 	margin: 1rem auto;
 	width: 150px;
@@ -236,20 +186,19 @@ input[type="range"] {
 	cursor: pointer;
 	transition: all 0.3s ease;
 	margin-top: 20px;
-  }
-  
-  input[type="submit"]:hover,
-  input[type="submit"]:focus {
-	background-color: #ebebeb;
-	box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
-	color: #000000;
-	transform: scale(1.05);
-  }
-
-  input[type="submit"]:active {
-	transform: translateY(-10px);
 }
 
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background-color: #ebebeb;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+	color: #000000;
+	transform: scale(1.05);
+}
+
+input[type="submit"]:active {
+	transform: translateY(-10px);
+}
 
 /* Shake animation */
 .shake {
